@@ -1,0 +1,39 @@
+{
+  "name": "devweb-tp5",
+  "version": "1.0.0",
+  "description": "TP5 — Tutoriel HTTP/Express Node.js",
+  "main": "server-http.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "http-dev": "cross-env NODE_ENV=development nodemon server-http.mjs",
+    "http-prod": "cross-env NODE_ENV=production node server-http.mjs",
+    "express-dev": "cross-env NODE_ENV=development nodemon server-express.mjs",
+    "express-prod": "cross-env NODE_ENV=production node server-express.mjs"
+  },
+  "author": "Liam J.",
+  "license": "ISC",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "ejs": "^3.1.10",
+    "express": "^4.21.0",
+    "http-errors": "^2.0.0",
+    "loglevel": "^1.9.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jest": "^28.8.3",
+    "eslint-plugin-n": "^17.11.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-unicorn": "^56.0.0",
+    "globals": "^15.11.0",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3"
+  }
+}
