@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Error</title>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Error <%= code %></h1>
+      <p><%= message %></p>
+    </div>
+    <% if (stack != null && stack !== "") { %>
+    <pre><%= stack %></pre>
+    <% } %>
+  </body>
+</html>
