@@ -27,9 +27,7 @@ app.get("/random/:nb", async function (request, response, next) {
   if (Number.isNaN(length)) {
     return next(createError(400));
   }
-  const numbers = Array.from({ length }, () =>
-    Math.floor(100 * Math.random())
-  );
+  const numbers = Array.from({ length }, () => Math.floor(100 * Math.random()));
   const welcome = "Hello";
   return response.render("random", { numbers, welcome });
 });
