@@ -28,9 +28,8 @@ async function requestListener(request, response) {
           response.writeHead(400);
           return response.end("<html><p>400: BAD REQUEST</p></html>");
         }
-        const numbers = Array.from(
-          { length: nb },
-          () => Math.floor(100 * Math.random())
+        const numbers = Array.from({ length: nb }, () =>
+          Math.floor(100 * Math.random())
         )
           .map((n) => `<li>${n}</li>`)
           .join("\n");
